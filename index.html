@@ -4,11 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!---This is a header--->
     <header>
       <nav>
+        <img src="./jewelry.jpg" alt="logo" class="logo" />
         <a href="#section-home">Home</a>
         <a href="#section-about">About</a>
         <a href="#section-work">Work</a>
@@ -32,10 +34,10 @@
         event or a delicate accessory to accentuate your everyday elegance, our
         diverse range of designs caters to all styles and preferences.
       </p>
-      <br>
+      <br />
       <!---This is the audio--->
-      <div>
-        <audio controls src="./High Noon - TrackTribe.mp3" align="center">Audio</audio>
+      <div class="audio">
+        <audio controls src="./High Noon - TrackTribe.mp3">Audio</audio>
       </div>
     </section>
     <!---About us section-->
@@ -120,10 +122,11 @@
         every piece he crafts.
       </p>
     </section>
+
     <!---Contact Section--->
-    <section>
+    <section id="contact">
       <h2 id="section-contact">Contact</h2>
-      <form>
+      <form class="form">
         <div>
           <label for="contact">Contact Name</label>
           <input type="text" placeholder="fullname" required />
@@ -144,7 +147,7 @@
           <input type="number" placeholder="" />
         </div>
         <br />
-        <input type="submit" />
+        <input type="submit" value="Submit" id="click" />
       </form>
     </section>
     <br />
